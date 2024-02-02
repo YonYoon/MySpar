@@ -24,6 +24,26 @@ struct ProductView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(height: 200)
+            
+            HStack {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+                Text("4.1")
+                Text("| 19 отзывов")
+                    .foregroundStyle(.gray)
+                
+                Spacer()
+                
+                Rectangle()
+                    .frame(width: 60, height: 30)
+                    .foregroundStyle(.red)
+                    .overlay {
+                        Text("-5%")
+                            .foregroundStyle(.white)
+                            .fontWeight(.bold)
+                    }
+                
+            }
         }
         .padding()
         .toolbar {
