@@ -37,6 +37,7 @@ struct ProductBottomView: View {
                         .fontWeight(.bold)
                 }
         }
+        .padding(.bottom)
     }
     
     struct Review: View {
