@@ -42,7 +42,14 @@ struct ProductView: View {
                             .foregroundStyle(.white)
                             .fontWeight(.bold)
                     }
-                
+            }
+            .padding(.bottom)
+            
+            HStack {
+                Text("Добавка \"Липа\" к чаю 200 г")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Spacer()
             }
         }
         .padding()
