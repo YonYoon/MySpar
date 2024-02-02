@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductView: View {
     @State private var type = "Шт"
     private let types = ["Шт", "Кг"]
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -30,43 +31,7 @@ struct ProductView: View {
                     }
                 }
                 
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("55.9")
-                            .font(.title)
-                            .fontWeight(.bold)
-                        Text("199,0")
-                            .strikethrough()
-                            .foregroundStyle(.secondary)
-                    }
-                    
-                    Spacer()
-                    
-                    RoundedRectangle(cornerRadius: 40)
-                        .containerRelativeFrame(.horizontal) { width, axis in
-                            width * 0.4
-                        }
-                        .frame(height: 50)
-                        .foregroundStyle(.accent)
-                        .overlay {
-                            HStack(spacing: 15) {
-                                Text("-")
-                                    .font(.largeTitle)
-                                
-                                VStack {
-                                    Text("1 шт")
-                                        .font(.title3)
-                                        .fontWeight(.bold)
-                                    Text("120,0₽")
-                                }
-                                
-                                Text("+")
-                                    .font(.largeTitle)
-                            }
-                            .foregroundStyle(.white)
-                        }
-                }
-                .padding(.bottom)
+                BuyView()
             }
             .padding(.horizontal)
             .pickerStyle(.segmented)
@@ -89,4 +54,46 @@ struct ProductView: View {
 
 #Preview {
     ProductView()
+}
+
+struct BuyView: View {
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text("55.9")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("199,0")
+                    .strikethrough()
+                    .foregroundStyle(.secondary)
+            }
+            
+            Spacer()
+            
+            RoundedRectangle(cornerRadius: 40)
+                .containerRelativeFrame(.horizontal) { width, axis in
+                    width * 0.4
+                }
+                .frame(height: 50)
+                .foregroundStyle(.accent)
+                .overlay {
+                    HStack(spacing: 15) {
+                        Text("-")
+                            .font(.largeTitle)
+                        
+                        VStack {
+                            Text("1 шт")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                            Text("120,0₽")
+                        }
+                        
+                        Text("+")
+                            .font(.largeTitle)
+                    }
+                    .foregroundStyle(.white)
+                }
+        }
+        .padding(.bottom)
+    }
 }
