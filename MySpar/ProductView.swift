@@ -9,7 +9,37 @@ import SwiftUI
 
 struct ProductView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                Button(action: {}, label: {
+                    Text("Цена по карте")
+                })
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.roundedRectangle)
+                
+                Spacer()
+            }
+        }
+        .padding()
+        .toolbar {
+            ToolbarItem(placement: .automatic) {
+                Button("List", systemImage: "list.bullet.rectangle.portrait") {
+                    // action
+                }
+            }
+            
+            ToolbarItem(placement: .automatic) {
+                Button("Share", systemImage: "square.and.arrow.up") {
+                    // action
+                }
+            }
+            
+            ToolbarItem(placement: .automatic) {
+                Button("Favorite", systemImage: "heart") {
+                    // action
+                }
+            }
+        }
     }
 }
 
