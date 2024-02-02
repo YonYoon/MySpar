@@ -29,7 +29,6 @@ struct ProductView: View {
                         Text(type)
                     }
                 }
-//                .padding(.bottom, 5)
                 
                 HStack {
                     VStack(alignment: .leading) {
