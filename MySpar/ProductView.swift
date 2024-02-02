@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
                 Button(action: {}, label: {
                     Text("Цена по карте")
@@ -51,25 +51,38 @@ struct ProductView: View {
                     .fontWeight(.bold)
                 Spacer()
             }
+            
+            HStack {
+                Image("Spain")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .clipShape(Circle())
+                Text("Испания, Риоха")
+                
+                Spacer()
+            }
+            .padding(.leading)
+            .padding(.bottom)
+            
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Описание")
+                    .fontWeight(.bold)
+                Text("Флавоноиды липового цвета обладают противовоспалительным действием, способствуют укреплению стенки сосудов.")
+            }
+            .padding(.bottom)
         }
-        .padding()
+        .padding(.horizontal)
         .toolbar {
             ToolbarItem(placement: .automatic) {
-                Button("List", systemImage: "list.bullet.rectangle.portrait") {
-                    // action
-                }
+                Button("List", systemImage: "list.bullet.rectangle.portrait") { }
             }
             
             ToolbarItem(placement: .automatic) {
-                Button("Share", systemImage: "square.and.arrow.up") {
-                    // action
-                }
+                Button("Share", systemImage: "square.and.arrow.up") { }
             }
             
             ToolbarItem(placement: .automatic) {
-                Button("Favorite", systemImage: "heart") {
-                    // action
-                }
+                Button("Favorite", systemImage: "heart") { }
             }
         }
     }
