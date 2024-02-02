@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct ProductView: View {
+    @State private var type = "Шт"
+    private let types = ["Шт", "Кг"]
     var body: some View {
-        ScrollView {
-            VStack {
-                ProductTopView()
-                
-                ProductMainView()
-                
-                ProductBottomView()
+        VStack {
+            ScrollView {
+                VStack {
+                    ProductTopView()
+                    
+                    ProductMainView()
+                    
+                    ProductBottomView()
+                }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
+            
+            VStack {
+                Picker("Select type of quantity", selection: $type) {
+                    ForEach(types, id: \.self) { type in
+                        Text(type)
+                    }
+                }
+            }
+            .pickerStyle(.segmented)
         }
         .toolbar {
             ToolbarItem(placement: .automatic) {

@@ -8,25 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		1562581F2B6D19C900B8F890 /* MySparApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562581E2B6D19C900B8F890 /* MySparApp.swift */; };
-		156258212B6D19C900B8F890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156258202B6D19C900B8F890 /* ContentView.swift */; };
+		156258212B6D19C900B8F890 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156258202B6D19C900B8F890 /* MainView.swift */; };
 		156258232B6D19C900B8F890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156258222B6D19C900B8F890 /* Assets.xcassets */; };
 		156258262B6D19C900B8F890 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156258252B6D19C900B8F890 /* Preview Assets.xcassets */; };
 		1562582D2B6D1A8200B8F890 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1562582C2B6D1A8200B8F890 /* ProductView.swift */; };
 		1592EDB12B6D482F00DD4DCC /* ProductTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDB02B6D482F00DD4DCC /* ProductTopView.swift */; };
 		1592EDB32B6D485B00DD4DCC /* ProductMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDB22B6D485B00DD4DCC /* ProductMainView.swift */; };
 		1592EDB52B6D48BF00DD4DCC /* ProductBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDB42B6D48BF00DD4DCC /* ProductBottomView.swift */; };
+		1592EDB82B6D4BE600DD4DCC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDB72B6D4BE600DD4DCC /* TabBarView.swift */; };
+		1592EDBA2B6D4C6800DD4DCC /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDB92B6D4C6800DD4DCC /* CatalogView.swift */; };
+		1592EDBC2B6D4CDA00DD4DCC /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDBB2B6D4CDA00DD4DCC /* BasketView.swift */; };
+		1592EDBE2B6D4D8F00DD4DCC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1592EDBD2B6D4D8F00DD4DCC /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1562581B2B6D19C900B8F890 /* MySpar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySpar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1562581E2B6D19C900B8F890 /* MySparApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySparApp.swift; sourceTree = "<group>"; };
-		156258202B6D19C900B8F890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		156258202B6D19C900B8F890 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		156258222B6D19C900B8F890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156258252B6D19C900B8F890 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1562582C2B6D1A8200B8F890 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		1592EDB02B6D482F00DD4DCC /* ProductTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTopView.swift; sourceTree = "<group>"; };
 		1592EDB22B6D485B00DD4DCC /* ProductMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMainView.swift; sourceTree = "<group>"; };
 		1592EDB42B6D48BF00DD4DCC /* ProductBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBottomView.swift; sourceTree = "<group>"; };
+		1592EDB72B6D4BE600DD4DCC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = SOURCE_ROOT; };
+		1592EDB92B6D4C6800DD4DCC /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		1592EDBB2B6D4CDA00DD4DCC /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		1592EDBD2B6D4D8F00DD4DCC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +51,6 @@
 		156258122B6D19C900B8F890 = {
 			isa = PBXGroup;
 			children = (
-				1592EDB42B6D48BF00DD4DCC /* ProductBottomView.swift */,
-				1592EDB22B6D485B00DD4DCC /* ProductMainView.swift */,
-				1592EDB02B6D482F00DD4DCC /* ProductTopView.swift */,
 				1562581D2B6D19C900B8F890 /* MySpar */,
 				1562581C2B6D19C900B8F890 /* Products */,
 			);
@@ -63,8 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				1562581E2B6D19C900B8F890 /* MySparApp.swift */,
-				156258202B6D19C900B8F890 /* ContentView.swift */,
-				1562582C2B6D1A8200B8F890 /* ProductView.swift */,
+				1592EDB72B6D4BE600DD4DCC /* TabBarView.swift */,
+				156258202B6D19C900B8F890 /* MainView.swift */,
+				1592EDB62B6D4BB700DD4DCC /* Product */,
+				1592EDB92B6D4C6800DD4DCC /* CatalogView.swift */,
+				1592EDBB2B6D4CDA00DD4DCC /* BasketView.swift */,
+				1592EDBD2B6D4D8F00DD4DCC /* ProfileView.swift */,
 				156258222B6D19C900B8F890 /* Assets.xcassets */,
 				156258242B6D19C900B8F890 /* Preview Content */,
 			);
@@ -77,6 +86,17 @@
 				156258252B6D19C900B8F890 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1592EDB62B6D4BB700DD4DCC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				1562582C2B6D1A8200B8F890 /* ProductView.swift */,
+				1592EDB42B6D48BF00DD4DCC /* ProductBottomView.swift */,
+				1592EDB22B6D485B00DD4DCC /* ProductMainView.swift */,
+				1592EDB02B6D482F00DD4DCC /* ProductTopView.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				156258212B6D19C900B8F890 /* ContentView.swift in Sources */,
+				1592EDBC2B6D4CDA00DD4DCC /* BasketView.swift in Sources */,
+				156258212B6D19C900B8F890 /* MainView.swift in Sources */,
+				1592EDBE2B6D4D8F00DD4DCC /* ProfileView.swift in Sources */,
 				1562582D2B6D1A8200B8F890 /* ProductView.swift in Sources */,
+				1592EDBA2B6D4C6800DD4DCC /* CatalogView.swift in Sources */,
+				1592EDB82B6D4BE600DD4DCC /* TabBarView.swift in Sources */,
 				1592EDB12B6D482F00DD4DCC /* ProductTopView.swift in Sources */,
 				1592EDB52B6D48BF00DD4DCC /* ProductBottomView.swift in Sources */,
 				1592EDB32B6D485B00DD4DCC /* ProductMainView.swift in Sources */,
