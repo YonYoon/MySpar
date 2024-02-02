@@ -110,7 +110,19 @@ struct ProductView: View {
                         Review()
                     }
                 }
-                .shadow(radius: 3)
+                .shadow(color: .gray.opacity(0.3), radius: 4)
+                .padding(.bottom)
+                
+                Button { } label: {
+                    RoundedRectangle(cornerRadius: 50)
+                        .strokeBorder(.accent, lineWidth: 3)
+                        .frame(maxWidth: .infinity, minHeight: 40)
+                        .overlay {
+                            Text("Оставить отзыв")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                        }
+                }
             }
             .padding(.horizontal)
         }
