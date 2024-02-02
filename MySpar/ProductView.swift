@@ -19,6 +19,11 @@ struct ProductView: View {
                 
                 Spacer()
             }
+            
+            Image("Product")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 200)
         }
         .padding()
         .toolbar {
